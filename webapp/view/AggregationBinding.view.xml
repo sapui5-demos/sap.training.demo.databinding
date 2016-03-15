@@ -1,0 +1,13 @@
+<mvc:View controllerName="sap.training.controller.AggregationBinding" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons">
+	
+	<RowRepeater numberOfRows="3" rows="{/data}">
+		<rows>
+			<Message text="{description}" type="{level}"/>
+		</rows>
+		<title>
+			<core:Title text="Famous Error Messages"/>
+		</title>
+	</RowRepeater>
+	
+</mvc:View>
