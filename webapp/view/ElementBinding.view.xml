@@ -1,16 +1,26 @@
-<mvc:View controllerName="sap.training.controller.ElementBinding" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
-	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.ui.commons">
+<mvc:View controllerName="sap.training.controller.ElementBinding"
+		  xmlns:html="http://www.w3.org/1999/xhtml"
+		  xmlns:core="sap.ui.core"
+		  xmlns:l="sap.ui.layout"
+		  xmlns:mvc="sap.ui.core.mvc"
+		  xmlns="sap.m">
 	
-	<ComboBox change="onChange" items="{/data}">
-		<items>
-			<core:ListItem text="{department}"/>
-		</items>
-	</ComboBox>
-	
-	<ListBox id="idListBox" items="{employees}" minWidth="100px" visibleItems="5">
-		<items>
-			<core:Item text="{name}"/>
-		</items>
-	</ListBox>
+	<l:HorizontalLayout>
+		<l:content>
+			
+			<ComboBox items="{/data}" selectionChange="onSelectionChange">
+				<items>
+					<core:Item text="{department}"/>
+				</items>
+			</ComboBox>
+			
+			<List id="idList" items="{employees}">
+				<items>
+					<StandardListItem title="{name}"/>
+				</items>
+			</List>
+			
+		</l:content>
+	</l:HorizontalLayout>
 	
 </mvc:View>

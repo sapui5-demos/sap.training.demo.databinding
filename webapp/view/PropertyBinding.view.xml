@@ -1,15 +1,19 @@
-<mvc:View   controllerName="sap.training.controller.PropertyBinding"
-            xmlns:html="http://www.w3.org/1999/xhtml"
-            xmlns:l="sap.ui.layout"
-	        xmlns:mvc="sap.ui.core.mvc"
-	        xmlns="sap.m">
+<mvc:View controllerName="sap.training.controller.PropertyBinding"
+          xmlns:html="http://www.w3.org/1999/xhtml"
+          xmlns:l="sap.ui.layout"
+	      xmlns:mvc="sap.ui.core.mvc"
+	      xmlns="sap.m">
     
 	<l:VerticalLayout>
 		<l:content>
+			
 			<Text text="{/firstName}"/>
+			
 			<Input value="{/firstName}"
 			       enabled="{/enabled}"/>
+			       
 			<CheckBox selected="{/enabled}"/>
+			
 		</l:content>
 	</l:VerticalLayout>
 	

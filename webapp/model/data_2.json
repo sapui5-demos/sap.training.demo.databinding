@@ -1,0 +1,10 @@
+{
+	"companies":
+		[
+			{ "name": "SAP SE", "city": "Walldorf" },
+			{ "name": "Beam Hdg.", "city": "Hancock" },
+			{ "name": "Carot Ltd.", "city": "Cheshire" },
+			{ "name": "Acme Inc.", "city": "Belmont" },
+			{ "name": "BMW AG", "city": "München" }
+		]
+}
